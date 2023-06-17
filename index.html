@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar3</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    border: none;
+}
+.navbar{
+    width: 100%;
+    min-height: 40px;
+    text-align: center;
+    background-color: sienna;
+    line-height: 40px;
+    
+}
+body{
+    background-color: aquamarine;
+}
+nav{
+    position: absolute;
+    top: 40px;
+    bottom: 0px;
+    height: 100%;
+    left: 0;
+    background: rgb(156, 17, 17);
+    width: 70px;
+    overflow: hidden;
+    transition: width o.5s linear;
+    box-shadow: 0 20px 35px rgba(72, 21, 21, 0.77);
+    
+}
+
+.logo{
+    text-align: center;
+    display: flex;transition: all 0.3s ease;
+
+}
+.logo img{
+    width: 45px;
+    min-height: 45px;
+    border-radius: 40%;
+}
+.logo span{
+    font-weight: bold;
+    padding: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    
+    
+}
+a{
+    position: relative;
+    color: green;
+    font-size: 14px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+}
+.fa-solid{
+    position: relative;
+    width: 70px;
+    min-height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+
+}
+.span-item{
+    position: relative;
+    top: 12px;
+    margin-left: 15px;
+}
+
+
+a:hover{
+    background-color: violet;
+}
+nav:hover{
+    width: 280px;
+    transition: all 2s step-start;
+}
+span:hover{
+    line-height: 40px;
+    /* text-align: center;
+    
+    background-color: rgb(135, 49, 135);
+    border-radius: 10px;
+ */
+    }    </style>
+</head>
+<body>
+    
+    <div class="wrapper">
+<div class="navbar">Logo</div>
+<nav>
+<ul>
+    <li><a href="www.google.com" class="logo"><img src="./pexels-pixabay-326576.jpg" alt=""> <span class="span-item">code info</span></a></li>
+    <li><a href="#"><i class="fa-solid fa-user"></i><span>Profile</span></a></li>
+
+    <li><a href="#"><i class="fa-solid fa-wallet"></i><span>Wallet</span></a></li>
+
+    <li><a href="#"><i class="fa-solid fa-chart-bar"></i><span>Anlytics</span></a></li>
+
+    <li><a href="#"><i class="fa-solid fa-tasks"></i><span>Task</span></a></li>
+
+    <li><a href="#"><i class="fa-solid fa-cog"></i><span>Setting</span></a></li>
+ 
+    <li><a href="#"><i class="fa-solid fa-question-circle"></i><span>Need help</span></a></li>
+ 
+    <li><a href="#"><i class="fa-solid fa-sign-out-alt"></i><span>Log out</span></a></li>
+ 
+</ul>
+</nav>
+    </div>
+</body>
+</html>
